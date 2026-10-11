@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi - Modern & Kreatif</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Kustom Terpisah -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent">Portofolio.</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition">Tentang</a>
+                <a href="#skills" class="hover:text-indigo-400 transition">Keahlian</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Proyek</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Kontak</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 bg-slate-900 border-b border-slate-800">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-indigo-400">Tentang</a>
+            <a href="#skills" class="block py-2 text-slate-300 hover:text-indigo-400">Keahlian</a>
+            <a href="#projects" class="block py-2 text-slate-300 hover:text-indigo-400">Proyek</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-indigo-400">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-40 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <div class="inline-block mb-4 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-sm font-medium">
+                Selamat Datang di Website Aing 👋
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+                 <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">Arya Kusuma Firdaus</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-8 h-8">
+                Saya adalah seorang <span id="element" class="text-indigo-400 font-semibold"></span>
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#projects" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-medium transition shadow-lg shadow-indigo-600/30">Lihat Proyek</a>
+                <a href="#contact" class="px-6 py-3 rounded-xl border border-slate-700 hover:border-slate-500 font-medium transition">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-300"></div>
+                <div class="relative bg-slate-900 p-8 rounded-2xl border border-slate-800 text-center">
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center text-4xl font-bold text-white shadow-xl">
+                        <img src="img/arya.jpeg" alt="Foto Profil" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mahasiswa <br> Teknik Informatika</h3>
+                    <p class="text-slate-400 text-sm">STMIK IKMI</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Tentang <span class="text-indigo-400">Saya</span></h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
+                   Saya adalah seorang mahasiswa Teknik Informatika di STMIK IKMI. Saya memiliki minat yang besar dalam pengembangan web, pemrograman, dan desain antarmuka pengguna. Saya selalu bersemangat untuk belajar teknologi baru dan mengembangkan keterampilan saya dalam dunia digital.
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-slate-300">
+                    <div><strong class="text-white">Email:</strong> arrgh2466@email.com</div>
+                    <div><strong class="text-white">Lokasi:</strong> Jawa Barat, Indonesia</div>
+                    <div><strong class="text-white">Status:</strong> Mahasiswa Full-time</div>
+                    <div><strong class="text-white">Hobi:</strong> Ngoding, Desain, Musik</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Keahlian <span class="text-indigo-400">Utama</span></h2>
+            <p class="text-slate-400 mb-12">Teknologi dan alat yang biasa saya gunakan dalam proyek.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition group">
+                    <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h4 class="font-semibold text-lg">HTML5 / CSS3</h4>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition group">
+                    <i class="fa-brands fa-js text-4xl text-yellow-400 mb-4 group-hover:scale-110 transition"></i>
+                    <h4 class="font-semibold text-lg">JavaScript</h4>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition group">
+                    <i class="fa-brands fa-python text-4xl text-cyan-400 mb-4 group-hover:scale-110 transition"></i>
+                    <h4 class="font-semibold text-lg">Python</h4>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition group">
+                    <i class="fa-brands fa-git-alt text-4xl text-red-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h4 class="font-semibold text-lg">Git & GitHub</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">Proyek <span class="text-indigo-400">Pilihan</span></h2>
+            <p class="text-slate-400 text-center mb-12">Beberapa karya terbaik yang pernah saya buat.</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden group">
+                    <img src="img/Screenshot 2026-08-27 063120.png" alt="Project Image" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Jaringan Komputer</h3>
+                        <p class="text-slate-400 text-sm mb-4">Jaringan komputer adalah sekumpulan dua atau lebih perangkat komputer yang saling terhubung untuk berkomunikasi, bertukar data, dan berbagi sumber daya. Perangkat yang terhubung tidak hanya komputer, tetapi juga dapat berupa laptop, smartphone, printer, server, router, dan perangkat lainnya</p>
+                        <a href="detail-jaringan.html" class="text-indigo-400 text-sm font-semibold hover:underline">Lihat Detail <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden group">
+                    <img src="img/Screenshot 2026-08-22 203101.png" alt="Project Image" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Pemrograman SQL</h3>
+                        <p class="text-slate-400 text-sm mb-4">SQL (Structured Query Language) adalah bahasa yang digunakan untuk mengelola dan memanipulasi data di dalam database (basis data). SQL banyak digunakan dalam pengembangan aplikasi web, aplikasi desktop, sistem informasi, dan berbagai aplikasi yang membutuhkan penyimpanan data.</p>
+                        <a href="detail-sql.html" class="text-indigo-400 text-sm font-semibold hover:underline">Lihat Detail <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Mari Terhubung <span class="text-indigo-400">Dengan Saya</span></h2>
+            <p class="text-slate-400 mb-8">Punya pertanyaan atau ingin bekerja sama? Kirimkan pesan!</p>
+            
+            <!-- Ubah bagian <form> di index.html Anda menjadi seperti ini: -->
+            <form id="contact-form" action="MASUKKAN_URL_FORMSPREE_ANDA_DISINI" method="POST" class="space-y-4 text-left">
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-1">Nama</label>
+                    <input type="text" name="nama" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 focus:border-indigo-500 focus:outline-none text-white">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-1">Email</label>
+                     <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 focus:border-indigo-500 focus:outline-none text-white">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-1">Pesan</label>
+                    <textarea name="pesan" rows="4" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 focus:border-indigo-500 focus:outline-none text-white"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-medium transition shadow-lg shadow-indigo-600/30 text-white cursor-pointer">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Nama Anda. Dibuat dengan  menggunakan HTML, CSS, & JavaScript.</p>
+    </footer>
+
+    <!-- Library Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- JavaScript Kustom Terpisah -->
+    <script src="script.js"></script>
+</body>
+</html>

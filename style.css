@@ -1,0 +1,27 @@
+/* Mengatur Font Utama */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tambahan styling kustom opsional jika diperlukan */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Efek kustom tambahan untuk scrollbar agar terlihat lebih rapi */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
